@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900);
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main{
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calcWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    /* box-shadow: 1px 1px 7px #210742; */
+    background: linear-gradient(45deg, #29262a, rgb(33, 33, 33), #27262a);
+}
+
+#input{
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 210%;
+}
+
+#btnBox{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#btnBox > .btn:last-child{
+    grid-column: span 2;
+}
+
+#btnMinus{
+    grid-row: span 2;
+}
+
+.btn{
+    font-size: 1.2rem;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn.special{
+    background-color: rgb(203, 133, 3);
+    border-radius: 20px;
+}
+.btn.special:hover{
+    background-color: rgb(218, 143, 2);
+}
+
+.btn:hover{
+    background-color: rgb(16, 16, 16);
+}
